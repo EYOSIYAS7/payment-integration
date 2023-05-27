@@ -18,5 +18,14 @@
   </head>
   <body>
     <h1>successfully paid</h1>
+    <a href="http://localhost:5000/home">go back to home</a>
+    <h1 class="ms-5 text-center"><%= data.message%></h1>
+    <p class="ms-5 text-center">payment: <%= data.status%></p>
+    <p class="ms-5 text-center">first name: <%= data.data.first_name%></p>
+    <p class="ms-5 text-center">last name: <%= data.data.last_name%></p>
+    <p class="ms-5 text-center">
+      amount: <%= data.data.amount%> <%= data.data.currency%>
+    </p>
+    <p class="ms-5 text-center">service: <%= data.data.customization.title%></p>
   </body>
 </html>
